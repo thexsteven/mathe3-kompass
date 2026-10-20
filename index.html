@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="de">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#142c2b"><meta name="description" content="Deine persönliche Vorlesungsbegleitung: mehrdimensionale Differentialrechnung Schritt für Schritt, mit Beispielen aus Übung 1 und interaktiven Erklärungen."><title>Mathe Kompass · Differentialrechnung</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><script src="content.js" defer></script><script src="model.js" defer></script><script src="app.js" defer></script></head>
+<body>
+<a class="skip" href="#main">Zum Inhalt</a>
+<div class="shade" id="shade"></div>
+<aside class="sidebar" id="sidebar" aria-label="Themennavigation">
+ <a class="brand" href="#start"><span class="brand-icon">∂</span><span>Mathe Kompass<small>MEHRERE VERÄNDERLICHE</small></span></a>
+ <div class="course-label"><span class="status-dot"></span> Angewandte Mathematik · INF 3</div>
+ <nav id="nav" aria-label="Kapitel"></nav>
+ <div class="sidebar-bottom"><a href="#quellen" class="source-link">▧ <span>Deine Unterlagen</span> <span>↗</span></a><div class="personal"><span class="avatar">S</span><span>Dein Vorlesungsbegleiter<small>Gemeinsam Mathematik verstehen</small></span></div></div>
+</aside>
+<div class="workspace">
+ <header class="topbar"><button class="icon-button mobile-menu" id="menu" aria-label="Themenmenü öffnen" aria-expanded="false">☰</button><div class="breadcrumb">DEIN LERNRAUM <span>/</span> <span id="crumb">Überblick</span></div><div class="top-actions"><button id="focus-exit" class="button small" hidden>Fokus beenden</button><button id="search-open" class="search-trigger"><span aria-hidden="true">⌕</span><span>Thema oder Formel suchen</span><kbd>/</kbd></button><button id="cheat-open" class="button small">ƒ <span>Formelblatt</span></button></div></header>
+ <main id="main" tabindex="-1"></main>
+ <footer class="site-footer"><span>Mathe Kompass <span class="footer-dot">·</span> Aus deinen Vorlesungsunterlagen aufgebaut</span><span>Alles frei erreichbar. Erklärungen bei Bedarf.</span></footer>
+</div>
+<dialog id="search-dialog" aria-labelledby="search-title"><div class="dialog-header"><h2 id="search-title">Was möchtest du verstehen?</h2><button class="icon-button" data-close aria-label="Suche schließen">×</button></div><label class="sr-only" for="search">Thema, Formel oder Aufgabe suchen</label><input id="search" class="search-input" placeholder="z. B. fxy, Kettenregel oder Aufgabe 6" autocomplete="off"><p id="search-count" class="muted smalltext" aria-live="polite"></p><div id="search-results"></div><div class="dialog-footer"><kbd>Esc</kbd> schließen <span>Alle Themen und Beispiele durchsuchen</span></div></dialog>
+<dialog id="cheat-dialog" aria-labelledby="cheat-title"><div class="dialog-header"><div><span class="eyebrow">SCHNELL ZUR HAND</span><h2 id="cheat-title">Dein Formelblatt</h2></div><button class="icon-button" data-close aria-label="Formelblatt schließen">×</button></div><div id="cheat-content"></div></dialog>
+<div class="toast" id="toast" role="status"></div>
+<noscript>Bitte aktiviere JavaScript für die interaktive Vorlesungsbegleitung. Die <a href="/sources/uebung-1.pdf">Originalübungen</a> und das <a href="/sources/skript.pdf">Skript</a> kannst du direkt öffnen.</noscript>
+</body></html>

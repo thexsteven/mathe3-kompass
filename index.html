@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="de">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#142c2b"><meta name="description" content="Deine persönliche Vorlesungsbegleitung: mehrdimensionale Differentialrechnung Schritt für Schritt, mit Beispielen aus Übung 1 und interaktiven Erklärungen."><title>Mathe Kompass · Differentialrechnung</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><script src="content.js" defer></script><script src="model.js" defer></script><script src="app.js" defer></script></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#142c2b"><meta name="description" content="Deine persönliche Vorlesungsbegleitung: mehrdimensionale Differentialrechnung Schritt für Schritt, mit Beispielen aus Übung 1 und interaktiven Erklärungen."><title>Mathe Kompass · Differentialrechnung</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="manifest" href="/site.webmanifest"><meta name="apple-mobile-web-app-title" content="Mathe Kompass"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="mobile-web-app-capable" content="yes"><link rel="stylesheet" href="style.css"><script src="content.js" defer></script><script src="model.js" defer></script><script src="app.js" defer></script></head>
 <body>
 <a class="skip" href="#main">Zum Inhalt</a>
 <div class="shade" id="shade"></div>
-<aside class="sidebar" id="sidebar" aria-label="Themennavigation">
+<aside class="sidebar" id="sidebar" aria-label="Themennavigation"><button class="icon-button menu-close" id="menu-close" aria-label="Themenmenü schließen">×</button>
  <a class="brand" href="#start"><span class="brand-icon">∂</span><span>Mathe Kompass<small>MEHRERE VERÄNDERLICHE</small></span></a>
  <div class="course-label"><span class="status-dot"></span> Angewandte Mathematik · INF 3</div>
  <nav id="nav" aria-label="Kapitel"></nav>
  <div class="sidebar-bottom"><a href="#quellen" class="source-link">▧ <span>Deine Unterlagen</span> <span>↗</span></a><div class="personal"><span class="avatar">S</span><span>Dein Vorlesungsbegleiter<small>Gemeinsam Mathematik verstehen</small></span></div></div>
 </aside>
 <div class="workspace">
- <header class="topbar"><button class="icon-button mobile-menu" id="menu" aria-label="Themenmenü öffnen" aria-expanded="false">☰</button><div class="breadcrumb">DEIN LERNRAUM <span>/</span> <span id="crumb">Überblick</span></div><div class="top-actions"><button id="focus-exit" class="button small" hidden>Fokus beenden</button><button id="search-open" class="search-trigger" aria-label="Thema oder Formel suchen"><span aria-hidden="true">⌕</span><span>Thema oder Formel suchen</span><kbd>/</kbd></button><button id="cheat-open" class="button small">ƒ <span>Formelblatt</span></button></div></header>
+ <header class="topbar"><button class="icon-button mobile-menu" id="menu" aria-label="Themenmenü öffnen" aria-expanded="false" aria-controls="sidebar">☰</button><div class="breadcrumb">DEIN LERNRAUM <span>/</span> <span id="crumb">Überblick</span></div><div class="top-actions"><button id="focus-exit" class="button small" hidden>Fokus beenden</button><button id="search-open" class="search-trigger" aria-label="Thema oder Formel suchen"><span aria-hidden="true">⌕</span><span>Thema oder Formel suchen</span><kbd>/</kbd></button><button id="cheat-open" class="button small">ƒ <span>Formelblatt</span></button></div></header>
  <main id="main" tabindex="-1"></main>
  <footer class="site-footer"><span>Mathe Kompass <span class="footer-dot">·</span> Aus deinen Vorlesungsunterlagen aufgebaut</span><span>Alles frei erreichbar. Erklärungen bei Bedarf.</span></footer>
 </div>
